@@ -4,14 +4,15 @@ k = int(input("Podaj k: "))
 print(k)
 
 def binary(x,k):
-    print("0,", end = '')
+    wynik = "0,"
     y = x
     for i in range(k):
         if(y>=0.5):
-            print(1, end = '')
+            wynik += "1"
         else:
-            print(0, end = '')
+            wynik += "0"
         y = y * 2
         if(y>=1):
             y = y-1 ;
-binary(x,k)
+    return wynik
+print(binary(x,k))
