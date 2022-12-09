@@ -1,7 +1,5 @@
-x = float(input("Podaj x: "))
-print(x)
-k = int(input("Podaj k: "))
-print(k)
+x = float(input("Podaj liczbę: "))
+k = int(input("Podaj dokładność: "))
 
 def binary(x,k):
     wynik = "0,"
@@ -33,4 +31,5 @@ def trójkowy(x,k):
             y = y-1
     return wynik
 
-print(trójkowy(x,k))
+print("Liczba w systemie binarnym wynosi: " + binary(x,k))
+print("Liczba w systemie trójkowym wynosi: " + trójkowy(x,k))
