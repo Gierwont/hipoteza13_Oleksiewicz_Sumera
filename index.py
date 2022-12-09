@@ -28,9 +28,9 @@ def trójkowy(x,k):
             wynik += "0"
         y = y * 3
         if(y>=2):
-            y = y-1
-        if(y>=1):
             y = y-2
+        if(y>=1):
+            y = y-1
     return wynik
 
 print(trójkowy(x,k))
